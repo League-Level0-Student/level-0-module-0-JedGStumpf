@@ -12,15 +12,26 @@ public class RobotSpiral {
 	public static void main(String[] args) {
 		
 		// Create a new Robot
+		Robot rob_1 = new Robot();
 		
 		// Set your robot's pen down 
+		rob_1.penDown();
 		
 		// SPEED. Set the robot to go at max speed (100)
+		rob_1.setSpeed(100);
 
 		// COUNT. Create an int variable that will count how many lines of the spiral we have drawn.
 			//        Start its value as zero.
+		int count = 0;
 
 		// LOOP. Start a while loop to repeat the COLOR, DRAW, TURN, and COUNT code below until 50 lines have been drawn
+		while (count < 50) {
+			rob_1.setRandomPenColor();
+			rob_1.move(count * 5);
+			rob_1.turn(360/7);
+			count += 1;
+			rob_1.setPenWidth(count);
+		}
 
 			// COLOR.   Have the robot set a random pen color:      setRandomPenColor()
 
