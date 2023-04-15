@@ -76,9 +76,9 @@ ellipse(x, y, 5, 5);
 // 11.  LASER BEAM.  This code will make your ellipse move down and to the right when you press 
 //      the space bar. Run the program to test it.
 //      If you want it to move to the left, change to x-1=.
-//void keyPressed() {
-//    x+=100;
-//    y+=100;
+void keyPressed() {
+    x+=100;
+    y+=100;
 
 
 // 12.  If you want them to go faster, add more than one each time the key is pressed        
